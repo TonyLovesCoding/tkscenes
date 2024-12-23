@@ -1,2 +1,1 @@
-from tkscenes.scene import *
-import tkscenes.child
+from tkscenes.scene import Scene
