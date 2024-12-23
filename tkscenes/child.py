@@ -45,14 +45,15 @@ class Child:
                 "padx": 0,
                 "pady": 0,
                 "ipadx": 0,
-                "ipady": 0
+                "ipady": 0,
+                "sticky": "center"
             }
 
             for i in settings.keys():
                 if i in self.mode_settings.keys():
                     settings[i] = self.mode_settings[i]
 
-            self.widget.pack(
+            self.widget.grid(
                 padx=settings["padx"],
                 pady=settings["pady"],
                 ipadx=settings["ipadx"],
@@ -60,7 +61,8 @@ class Child:
                 column=settings["column"],
                 row=settings["row"],
                 columnspan=settings["columnspan"],
-                rowspan=settings["rowspan"]
+                rowspan=settings["rowspan"],
+                sticky=settings["sticky"]
             )
             return
         if self.mode == "place":

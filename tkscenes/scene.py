@@ -1,4 +1,4 @@
-from scenic.child import Child as Child
+from tkscenes.child import Child as Child
 
 
 class Scene:
