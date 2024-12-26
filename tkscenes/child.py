@@ -94,4 +94,15 @@ class Child:
             return
 
     def unrender(self):
+        if self.mode == "pack":
+            self.widget.pack_forget()
+            return
+        if self.mode == "grid":
+            self.widget.grid_forget()
+            return
+        if self.mode == "place":
+            self.widget.place_forget()
+            return
+
+    def destroy(self):
         self.widget.destroy()
