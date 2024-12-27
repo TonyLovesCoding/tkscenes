@@ -20,8 +20,5 @@ class Scene:
             child.unrender()
 
     def destroy(self):
-        keys = self.children.keys()
-
-        for key in keys:
+        for key in self.children.keys():
             self.children[key].destroy()
-            del self.children[key]
