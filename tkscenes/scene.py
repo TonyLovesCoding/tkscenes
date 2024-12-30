@@ -59,3 +59,22 @@ class Scene:
         """
         self.unload()
         self.load()
+
+    # not recommended to use
+    def pack(self):
+        self.load()
+
+    def grid(self):
+        self.load()
+
+    def place(self):
+        self.load()
+
+    def pack_forget(self):
+        self.unload()
+
+    def grid_forget(self):
+        self.unload()
+
+    def place_forget(self):
+        self.unload()
