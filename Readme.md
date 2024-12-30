@@ -15,10 +15,14 @@ To create a scene, use `tkscene.Scene()`
 ## Adding child to a scene
 
 ## Setting pack, grid and place
+Use `child.set_mode()`
 
 ## Loading and unloading scenes
-`scene.load()`
+`scene.load()`\
 `scene.unload()`
+
+## Reload scene
+`scene.reload()`
 
 # Example:
 ```python
