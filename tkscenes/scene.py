@@ -53,5 +53,9 @@ class Scene:
             del self.children[key]
 
     def reload(self):
+        """
+        Reloads the scene
+        :return:
+        """
         self.unload()
         self.load()
