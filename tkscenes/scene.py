@@ -51,3 +51,7 @@ class Scene:
         for key in keys:
             self.children[key].destroy()
             del self.children[key]
+
+    def reload(self):
+        self.unload()
+        self.load()
